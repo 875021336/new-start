@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表格</title>
+	<style type="text/css">
+			body{
+				font-family: arial;
+			}	
+
+			.layout{
+				width: 600px;
+				margin: 0 auto;
+			}	
+
+			.layout>table {
+				margin-top: 30px;
+			}
+
+			.c-table {
+				border-collapse: collapse;
+				border-spacing: 0;
+				width: 100%;
+				border: 1px solid #ccc;
+			}
+
+			.c-table tr {
+				border-bottom: 1px solid #ddd;
+				text-align: left;
+			}
+
+			.c-table tr:nth-child(even) {
+				background-color: #f1f1f1;
+			}
+
+			.c-table th{
+				color: #fff;
+				background-color: #4CAF50;
+				padding: 8px 8px;
+				font-weight:bold;
+			}
+
+			.c-table td{
+				padding: 8px 8px;
+			}
+
+			.c-table.b {
+				border:none;
+			}
+			.c-table.b th {
+				background-color: #fff;
+				color:#000;
+			}
+	</style>
+</head>
+<body>
+  <div class="layout">
+  	<table class="c-table">
+  		<tr>
+  			<th>First Name</th>
+  			<th>Last Name</th>
+  			<th>Point</th>
+  		</tr>
+  		<tr>
+  			<td>Jill</td>
+  			<td>Smitd</td>
+  			<td>50</td>
+  		</tr>
+  		<tr>
+  			<td>Eve</td>
+  			<td>Jackson</td>
+  			<td>94</td>
+  		</tr>
+  		<tr>
+  			<td>Adam</td>
+  			<td>Johnson</td>
+  			<td>67</td>
+  		</tr>
+  		<tr>
+  			<td>Bo</td>
+  			<td>Nilsson</td>
+  			<td>50</td>
+  		</tr>
+  		<tr>
+  			<td>Milk</td>
+  			<td>Ross</td>
+  			<td>35</td>
+  		</tr>
+  	</table>
+
+  	<table class="c-table b">
+  		<tr>
+  			<th>First Name</th>
+  			<th>Last Name</th>
+  			<th>Point</th>
+  		</tr>
+  		<tr>
+  			<td>Jill</td>
+  			<td>Smitd</td>
+  			<td>50</td>
+  		</tr>
+  		<tr>
+  			<td>Eve</td>
+  			<td>Jackson</td>
+  			<td>94</td>
+  		</tr>
+  		<tr>
+  			<td>Adam</td>
+  			<td>Johnson</td>
+  			<td>67</td>
+  		</tr>
+  		<tr>
+  			<td>Bo</td>
+  			<td>Nilsson</td>
+  			<td>50</td>
+  		</tr>
+  		<tr>
+  			<td>Milk</td>
+  			<td>Ross</td>
+  			<td>35</td>
+  		</tr>
+  	</table>
+  </div>
+</body>
+</html>
