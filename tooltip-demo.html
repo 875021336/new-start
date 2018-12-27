@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://js.jirengu.com
+
+Copyright (c) 2018 by anonymous (http://js.jirengu.com/paharayapu/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+.tooltip {
+  position:relative;
+  top:50px;
+  left:50px;
+  width:300px;
+  height:100px;
+  border:1px solid red;
+}
+.tooltip::before {
+  content: '';
+  position:absolute;
+  left:20px;
+  top:-20px;
+  border-top:20px solid grey;
+  border-right:20px solid transparent;
+  border-bottom:20px solid transparent;
+  border-left:20px solid grey;
+  transform:rotate(45deg);
+}
+
+
+.tooltip2 {
+  position:relative;
+  top:150px;
+  left:50px;
+  width:300px;
+  height:100px;
+  border:1px solid black;
+}
+.tooltip2::before {
+  content: '';
+  position:absolute;
+  right:0;
+  border-top:20px solid red;
+  border-right:20px solid red;
+  border-bottom:20px solid transparent;
+  border-left:20px solid transparent;
+}
+
+
+.tooltip3 {
+  position:relative;
+  top:250px;
+  left:50px;
+  width:300px;
+  height:100px;
+  border:1px solid grey;
+}
+.tooltip3:before {
+  content: '';
+  position:absolute;
+  left:20px;
+  top:-21px;
+  padding:20px;
+  border:inherit;
+  background:white;
+  border-right:0;
+  border-bottom:0;
+  transform:rotate(45deg);
+}
+
+
+
+</style>
+</head>
+<body>
+  <div class="tooltip"></div>
+  <div class="tooltip2"></div>
+  <div class="tooltip3"></div>
+</body>
+</html>
